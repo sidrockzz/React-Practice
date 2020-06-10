@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { Navbar } from '../node_modules/reactstrap';
 import './App.css';
 import NavbarBrand from "reactstrap/es/NavbarBrand";
+import Menu from './components/MenuComponent';
 // Bootsrap component added into the code using reatstrap
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
             </NavbarBrand>
           </div>
         </Navbar>
-      <h1 className="shadow"> This is nothing!</h1>
+        <Menu />
     </div>
   );
 }
