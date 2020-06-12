@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardImg, CardTitle, CardImgOverlay} from "reactstrap";
 
-function RednerMenuItem({dish, onClick}) {
+function RednerMenuItem({dish}) {
     return(
-        <Card onClick={() => onClick(dish.id)} >
+        <Card  >
             <CardImg width="100%" src={dish.image} alt={dish.name} />
             <CardImgOverlay>
                 <CardTitle>{dish.name}</CardTitle>
