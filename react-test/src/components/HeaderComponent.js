@@ -57,7 +57,7 @@ class Header extends Component {
                             </Nav>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
-                                    <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
+                                    <Button color='light' outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
                                 </NavItem>
                             </Nav>
                         </Collapse>
@@ -74,8 +74,8 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal} className="bg-danger">Login</ModalHeader>
-                    <ModalBody className="bg-info">
+                    <ModalHeader toggle={this.toggleModal} style={{backgroundColor: 'black', color:'floralwhite'}}>Login</ModalHeader>
+                    <ModalBody style={{backgroundColor: '#414646', color:'floralwhite'}}>
                         <Form onSubmit={this.handleLogin} >
                             <FormGroup>
                                 <Label htmlFor="username">Username</Label>
@@ -94,7 +94,7 @@ class Header extends Component {
                                     Remember me
                                 </Label>
                             </FormGroup>
-                            <Button type="submit" value="submit" color="success">Login</Button>
+                            <Button type="submit" value="submit" color="light">Login</Button>
                         </Form>
                     </ModalBody>
                 </Modal>
