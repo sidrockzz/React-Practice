@@ -3,8 +3,9 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 function About(props) {
-    console.log(props.leader)
-    const leaders = props.leader.map((leader) => {
+    console.log(props)
+    console.log(props.leaders)
+    const leaders = props.leaders.map((leader) => {
         return (
             <RenderLeader leader = {leader} />
         );
@@ -52,7 +53,7 @@ function About(props) {
                 </div>
                 <div className="col-12 col-md-5">
                     <Card>
-                        <CardHeader className="bg-transparent text-black-50">Facts At a Glance</CardHeader>
+                        <CardHeader className="bg-primary text-white">Facts At a Glance</CardHeader>
                         <CardBody>
                             <dl className="row p-1">
                                 <dt className="col-6">Started</dt>
